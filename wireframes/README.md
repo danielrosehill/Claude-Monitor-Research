@@ -86,6 +86,46 @@ Two shapes worth looking at rather than reading:
   columns of anything scored. This is the 32:9 trap, and it only appears when panes
   are stacked.
 
+### Vertical, square and TV-class form factors
+
+Added 2026-08-12. Scored against the `observed` tier (26 × 39) at 700 mm. Pane
+grids are not chosen — each is the maximum that panel yields.
+
+| File | Panel | PPI | Panes | Cells/pane |
+|---|---|---|---|---|
+| `3x2-24in-rotated` | 24″ 1080p **rotated** | 93 | 3 × 2 | 33 × 42 |
+| `4x2-27in-4k-rotated` | 27″ 4K **rotated** | 163 | 4 × 2 | 28 × 50 |
+| `5x2-32in-4k-rotated` | 32″ 4K **rotated** | 140 | 5 × 2 | 26 × 59 |
+| `5x2-32in-signage-vertical` | 32″ 9:16 vertical-**native** signage | 70 | 5 × 2 | 26 × 56 |
+| `6x2-28in-dualup` | 27.6″ 16:18 LG DualUp (native) | 140 | 6 × 2 | 26 × 43 |
+| `6x1-26in-square` | 26.5″ 1:1 square (Eizo class) | 102 | 6 × 1 | 27 × 77 |
+| `13x2-48in-tv` | 48″ 4K TV class | 92 | 13 × 2 | 27 × 48 |
+
+**What these renders show that the pane counts do not.** Every vertical and square
+configuration produces panes that are *far taller than a session needs and
+narrower than one wants*. The square panel is the extreme: **27 columns and 77
+rows**, when the measured working session uses 39 rows. Roughly half that pane is
+empty in the render, and it is empty because the content ran out, not because the
+sheet was cropped.
+
+The direct comparison is the same panel with and without rotation:
+
+| 32″ 4K | Panes | Cells/pane |
+|---|---|---|
+| landscape, `8x1-32in-4k-observed` | 8 | 30 × 65 |
+| rotated, `5x2-32in-4k-rotated` | 10 | 26 × 59 |
+
+Rotating buys **two extra panes and costs four columns each** — and on top of that
+it breaks subpixel text rendering, because ClearType and FreeType LCD filtering
+both assume horizontal RGB stripes. Verified on this machine: `fc-match` reports
+`rgba: 1` (horizontal RGB) and nothing anywhere sets `vrgb`. That penalty applies
+to the *rotated* rows only; the vertical-**native** signage panel does not pay it,
+but pays 70 PPI instead, which is the coarsest glyph rendering of anything scored.
+
+Not rendered: the 8.8″ and 29″ bar displays. At 700 mm a 1920×540 bar yields 23
+usable rows and a 1920×480 yields 8, both below the 40 one pane needs. A bar is a
+status strip — one line per session — not a pane device.
+
 ## Adding a configuration
 
 Append to `CONFIGS` in [`../scripts/wireframe.py`](../scripts/wireframe.py):

@@ -1,0 +1,329 @@
+{
+  "generated": "scripts/reference.py",
+  "tier": "observed",
+  "tier_cells": {
+    "cols": 26,
+    "rows": 39,
+    "note": "Measured, not assumed. The 1x6 vertical split actually in daily use on the 1920x1080 laptop, read live off Konsole on 2026-08-12. Far narrower and more than twice as tall as the 'glanceable' tier was guessed to be, because splitting vertically hands every pane the full panel height for nothing."
+  },
+  "arcmin": 16.8,
+  "gathered": "2026-08-12",
+  "price_caveat": "US street prices, USD, indicative of tier only. Bar and square panel prices are estimates; the Eizo square is discontinued and used-only.",
+  "configs": [
+    {
+      "config": "Laptop only (today)",
+      "arrangement": "row",
+      "panels": [
+        "laptop"
+      ],
+      "form": "traditional",
+      "distance_mm": 500,
+      "array_mm": [
+        345,
+        194
+      ],
+      "comfort_mm": [
+        577,
+        332
+      ],
+      "panes_total": 6,
+      "panes_comfortable": 6,
+      "usd": 0,
+      "usd_per_comfortable_pane": 0,
+      "notes": "the machine you have"
+    },
+    {
+      "config": "One boring monitor",
+      "arrangement": "row",
+      "panels": [
+        "32-4k"
+      ],
+      "form": "traditional",
+      "distance_mm": 700,
+      "array_mm": [
+        697,
+        392
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 9,
+      "panes_comfortable": 9,
+      "usd": 310,
+      "usd_per_comfortable_pane": 34,
+      "notes": "140 PPI, matches laptop"
+    },
+    {
+      "config": "Rotated economy grid",
+      "arrangement": "row",
+      "panels": [
+        "rotated 24-1080",
+        "rotated 24-1080",
+        "rotated 24-1080"
+      ],
+      "form": "traditional (rotated)",
+      "distance_mm": 700,
+      "array_mm": [
+        889,
+        527
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 18,
+      "panes_comfortable": 16,
+      "usd": 300,
+      "usd_per_comfortable_pane": 19,
+      "notes": "commodity office panel"
+    },
+    {
+      "config": "Rotated 4K pair",
+      "arrangement": "row",
+      "panels": [
+        "rotated 27-4k",
+        "rotated 27-4k"
+      ],
+      "form": "traditional (rotated)",
+      "distance_mm": 700,
+      "array_mm": [
+        672,
+        598
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 16,
+      "panes_comfortable": 16,
+      "usd": 700,
+      "usd_per_comfortable_pane": 44,
+      "notes": "163 PPI, needs scaling"
+    },
+    {
+      "config": "Rotated single tall",
+      "arrangement": "row",
+      "panels": [
+        "rotated 32-4k"
+      ],
+      "form": "traditional (rotated)",
+      "distance_mm": 700,
+      "array_mm": [
+        392,
+        697
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 10,
+      "panes_comfortable": 10,
+      "usd": 310,
+      "usd_per_comfortable_pane": 31,
+      "notes": "140 PPI, matches laptop"
+    },
+    {
+      "config": "Vertical-native signage",
+      "arrangement": "row",
+      "panels": [
+        "32-signage-v",
+        "32-signage-v"
+      ],
+      "form": "vertical-native",
+      "distance_mm": 700,
+      "array_mm": [
+        785,
+        697
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 20,
+      "panes_comfortable": 20,
+      "usd": 760,
+      "usd_per_comfortable_pane": 38,
+      "notes": "commercial portrait-only signage panel, 24/7 rated, price converted from UK inc-VAT listing"
+    },
+    {
+      "config": "Geminos stacked pair",
+      "arrangement": "stack",
+      "panels": [
+        "geminos",
+        "geminos"
+      ],
+      "form": "vertical-native",
+      "distance_mm": 700,
+      "array_mm": [
+        527,
+        593
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 12,
+      "panes_comfortable": 12,
+      "usd": 640,
+      "usd_per_comfortable_pane": 53,
+      "notes": "one half of a Mobile Pixels Geminos stacked pair"
+    },
+    {
+      "config": "Near-square (LG DualUp)",
+      "arrangement": "row",
+      "panels": [
+        "28-dualup"
+      ],
+      "form": "near-square",
+      "distance_mm": 700,
+      "array_mm": [
+        466,
+        524
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 12,
+      "panes_comfortable": 12,
+      "usd": 697,
+      "usd_per_comfortable_pane": 58,
+      "notes": "LG DualUp 28MQ780, current product"
+    },
+    {
+      "config": "The wide row",
+      "arrangement": "row",
+      "panels": [
+        "49-dqhd"
+      ],
+      "form": "super-ultra",
+      "distance_mm": 700,
+      "array_mm": [
+        1198,
+        337
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 15,
+      "panes_comfortable": 10,
+      "usd": 570,
+      "usd_per_comfortable_pane": 57,
+      "notes": "109 PPI"
+    },
+    {
+      "config": "Working-pane rig",
+      "arrangement": "row",
+      "panels": [
+        "40-5k2k"
+      ],
+      "form": "ultrawide",
+      "distance_mm": 700,
+      "array_mm": [
+        927,
+        397
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 12,
+      "panes_comfortable": 10,
+      "usd": 620,
+      "usd_per_comfortable_pane": 62,
+      "notes": "140 PPI, rare category"
+    },
+    {
+      "config": "Main panel + status strip",
+      "arrangement": "row",
+      "panels": [
+        "32-4k",
+        "bar-8.8"
+      ],
+      "form": "bar+traditional",
+      "distance_mm": 700,
+      "array_mm": [
+        914,
+        392
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 9,
+      "panes_comfortable": 8,
+      "usd": 380,
+      "usd_per_comfortable_pane": 48,
+      "notes": "140 PPI, matches laptop; status strip, cannot hold a pane"
+    },
+    {
+      "config": "Twin 32in",
+      "arrangement": "row",
+      "panels": [
+        "32-4k",
+        "32-4k"
+      ],
+      "form": "traditional",
+      "distance_mm": 700,
+      "array_mm": [
+        1395,
+        392
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 18,
+      "panes_comfortable": 10,
+      "usd": 620,
+      "usd_per_comfortable_pane": 62,
+      "notes": "140 PPI, matches laptop"
+    },
+    {
+      "config": "TV class",
+      "arrangement": "row",
+      "panels": [
+        "48-4k-oled"
+      ],
+      "form": "tv-class",
+      "distance_mm": 700,
+      "array_mm": [
+        1063,
+        598
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 26,
+      "panes_comfortable": 20,
+      "usd": 1100,
+      "usd_per_comfortable_pane": 55,
+      "notes": "WRGB subpixel, text fringes"
+    },
+    {
+      "config": "The wall",
+      "arrangement": "row",
+      "panels": [
+        "57-dual4k"
+      ],
+      "form": "super-ultra",
+      "distance_mm": 700,
+      "array_mm": [
+        1394,
+        392
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "panes_total": 18,
+      "panes_comfortable": 10,
+      "usd": 1600,
+      "usd_per_comfortable_pane": 160,
+      "notes": "needs DisplayPort 2.1"
+    }
+  ]
+}

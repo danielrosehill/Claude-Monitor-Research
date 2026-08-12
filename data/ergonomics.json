@@ -1,0 +1,301 @@
+{
+  "distance_mm": 700.0,
+  "gaze_deg": {
+    "left": 30.0,
+    "right": 30.0,
+    "up": 5.0,
+    "down": 30.0
+  },
+  "comfort_box_mm": [
+    808,
+    465
+  ],
+  "comfort_aspect": 1.74,
+  "forms": [
+    {
+      "panel_mm": [
+        527,
+        296
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        527,
+        296
+      ],
+      "coverage": 1.0,
+      "width_over": 0,
+      "height_over": 0,
+      "label": "24in 16:9 landscape",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        598,
+        336
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        598,
+        336
+      ],
+      "coverage": 1.0,
+      "width_over": 0,
+      "height_over": 0,
+      "label": "27in 16:9 landscape",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        697,
+        392
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        697,
+        392
+      ],
+      "coverage": 1.0,
+      "width_over": 0,
+      "height_over": 0,
+      "label": "32in 16:9 landscape",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        930,
+        523
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        808,
+        404
+      ],
+      "coverage": 0.672,
+      "width_over": 122,
+      "height_over": 119,
+      "label": "42in 16:9 landscape",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        1063,
+        598
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        808,
+        404
+      ],
+      "coverage": 0.514,
+      "width_over": 254,
+      "height_over": 194,
+      "label": "48in 16:9 landscape",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        296,
+        527
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        296,
+        404
+      ],
+      "coverage": 0.767,
+      "width_over": 0,
+      "height_over": 123,
+      "label": "24in 9:16 PORTRAIT",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        336,
+        598
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        336,
+        404
+      ],
+      "coverage": 0.676,
+      "width_over": 0,
+      "height_over": 194,
+      "label": "27in 9:16 PORTRAIT",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        392,
+        697
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        392,
+        404
+      ],
+      "coverage": 0.58,
+      "width_over": 0,
+      "height_over": 293,
+      "label": "32in 9:16 PORTRAIT",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        476,
+        476
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        476,
+        404
+      ],
+      "coverage": 0.849,
+      "width_over": 0,
+      "height_over": 72,
+      "label": "26.5in 1:1 square",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        466,
+        524
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        466,
+        404
+      ],
+      "coverage": 0.771,
+      "width_over": 0,
+      "height_over": 120,
+      "label": "27.6in 16:18 near-square",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        927,
+        397
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        808,
+        397
+      ],
+      "coverage": 0.872,
+      "width_over": 119,
+      "height_over": 0,
+      "label": "40in 21:9 ultrawide",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        1198,
+        337
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        808,
+        337
+      ],
+      "coverage": 0.675,
+      "width_over": 390,
+      "height_over": 0,
+      "label": "49in 32:9 super-ultra",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        1394,
+        392
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        808,
+        392
+      ],
+      "coverage": 0.58,
+      "width_over": 585,
+      "height_over": 0,
+      "label": "57in 32:9 super-ultra",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        709,
+        199
+      ],
+      "comfort_mm": [
+        808,
+        465
+      ],
+      "visible_mm": [
+        709,
+        199
+      ],
+      "coverage": 1.0,
+      "width_over": 0,
+      "height_over": 0,
+      "label": "29in bar 1920x540",
+      "distance_mm": 700.0
+    },
+    {
+      "panel_mm": [
+        217,
+        54
+      ],
+      "comfort_mm": [
+        577,
+        332
+      ],
+      "visible_mm": [
+        217,
+        54
+      ],
+      "coverage": 1.0,
+      "width_over": 0,
+      "height_over": 0,
+      "label": "8.8in bar 1920x480",
+      "distance_mm": 500.0
+    }
+  ]
+}

@@ -127,7 +127,42 @@ CONFIGS = {
         "32in 16:9 4K — 6 panes stacked as rows, 1x6", 32.0, 16, 9, 3840, 2160, 1, 6, "working", None),
     "4x2-49in-32x9": (
         "49in 32:9 DQHD — 8 panes, 4x2", 49.0, 32, 9, 5120, 1440, 4, 2, "working", None),
+
+    # --- vertical, square and TV-class form factors -----------------------
+    # Added 2026-08-12 alongside scripts/reference.py. Pane grids are not
+    # chosen, they are the maximum each panel yields at 700 mm - recompute with
+    # reference.py if the tier changes. The point of rendering these is that the
+    # pane COUNT flatters several of them while the glyph rendering does not:
+    # the 70 PPI signage panel draws Hack at a 7.8 px advance against the
+    # laptop's 11.2, and only a wireframe shows what that looks like.
+    "5x2-32in-signage-vertical": (
+        "32in 9:16 vertical-NATIVE signage (1080x1920, 70 PPI) — 10 panes, 5x2",
+        31.5, 9, 16, 1080, 1920, 5, 2, "observed", None),
+    "3x2-24in-rotated": (
+        "24in 1080p ROTATED to vertical (93 PPI) — 6 panes, 3x2; x3 = the economy grid",
+        23.8, 9, 16, 1080, 1920, 3, 2, "observed", None),
+    "4x2-27in-4k-rotated": (
+        "27in 4K ROTATED to vertical (163 PPI) — 8 panes, 4x2",
+        27.0, 9, 16, 2160, 3840, 4, 2, "observed", None),
+    "5x2-32in-4k-rotated": (
+        "32in 4K ROTATED to vertical (140 PPI) — 10 panes, 5x2",
+        31.5, 9, 16, 2160, 3840, 5, 2, "observed", None),
+    "6x2-28in-dualup": (
+        "27.6in 16:18 LG DualUp, natively taller than wide (140 PPI) — 12 panes, 6x2",
+        27.6, 16, 18, 2560, 2880, 6, 2, "observed", None),
+    "6x1-26in-square": (
+        "26.5in 1:1 square, Eizo EV2730Q class (102 PPI) — 6 panes, 6x1",
+        26.5, 1, 1, 1920, 1920, 6, 1, "observed", None),
+    "13x2-48in-tv": (
+        "48in 16:9 4K TV class (92 PPI) — 26 panes, 13x2",
+        48.0, 16, 9, 3840, 2160, 13, 2, "observed", None),
 }
+
+# Deliberately NOT rendered: the 8.8in and 29in bar displays. At 700 mm a
+# 1920x540 bar yields 23 usable rows and a 1920x480 bar yields 8 - both below
+# the 40 rows one pane needs, so there is no pane layout to draw. A bar panel is
+# a status strip (one line per session), not a pane device, and this script only
+# knows how to draw panes. See docs/vertical-and-exotic-form-factors.md.
 
 
 def esc(s):
