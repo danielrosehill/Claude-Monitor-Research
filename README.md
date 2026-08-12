@@ -177,10 +177,46 @@ docs/readability-geometry.md     the model: assumptions, derivation, full tables
 docs/form-factors.md             existing panels scored; spec for a purpose-built one
 docs/software-layer.md           the session-grid wrapper: requirements and prior art
 scripts/geometry.py              re-runnable model; --json for machine output
+scripts/wireframe.py             renders true-scale SVG mockups of any candidate grid
+fixtures/sessions.json           simulated session content the wireframes re-flow
+wireframes/                      generated SVG + PNG, one per candidate configuration
 data/*.json                      generated output, checked in so it is diffable
 data/observed-*.json             measured layouts — evidence, not model output
 evidence/                        real working layouts, dated, with the panel used
 ```
+
+## Wireframes — testing the tiers instead of asserting them
+
+Finding 6 showed a guessed pane tier can be wrong in *shape*, not just size, which
+makes the remaining guesses (`working`, `review`) the weakest part of the model.
+[`scripts/wireframe.py`](scripts/wireframe.py) exists to attack them: it re-flows
+the same simulated sessions from [`fixtures/sessions.json`](fixtures/sessions.json)
+into whatever pane a candidate panel would actually give, **wrapping and clipping
+exactly as a terminal does**.
+
+Output is SVG in millimetres — true physical size. Print at 100%, stand at the
+stated distance, and judge it. Or print scaled and stand proportionally closer:
+scaling by *k* and viewing at *k* × distance preserves angular size exactly, and
+each sheet prints its own equivalent distance.
+
+```bash
+python3 scripts/wireframe.py --list
+python3 scripts/wireframe.py --config 8x1-32in-4k-observed --png
+python3 scripts/wireframe.py --all --png
+```
+
+Two things the wireframes make visible that no table does:
+
+- **The red `+N↑` counter** in each pane header — how many lines wrapping pushed
+  off the top. It is the real cost of a narrow pane, and it is invisible in a
+  columns × rows figure.
+- **Border colour by session state.** The blocked session is obvious at a glance
+  in a row of eight. That is requirement R1 from
+  [`docs/software-layer.md`](docs/software-layer.md) drawn rather than described,
+  and it is the argument for candidate B.
+
+See [`wireframes/README.md`](wireframes/README.md) for what each configuration
+shows.
 
 ## Status
 

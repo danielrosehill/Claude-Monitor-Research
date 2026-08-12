@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760.4mm" height="484.5mm" viewBox="0 0 760.4 484.5">
+<rect width="760.4" height="484.5" fill="#ffffff"/>
+<text x="26.00" y="13.00" font-family="DejaVu Sans, sans-serif" font-size="5.200" fill="#111111" font-weight="bold" text-anchor="start" xml:space="preserve">32in 16:9 4K — 8 panes, 4x2</text>
+<text x="734.42" y="13.00" font-family="DejaVu Sans, sans-serif" font-size="5.200" fill="#b00020" font-weight="bold" text-anchor="end" xml:space="preserve">TOO SMALL</text>
+<text x="26.00" y="21.00" font-family="DejaVu Sans, sans-serif" font-size="3.500" fill="#444444" font-weight="normal" text-anchor="start" xml:space="preserve">3840x2160 · 138 PPI · 708x398 mm · 4x2 panes · 61x32 cells per pane (target 80x30, tier 'working') · Hack 19.1pt</text>
+<text x="26.00" y="28.00" font-family="DejaVu Sans, sans-serif" font-size="3.500" fill="#444444" font-weight="normal" text-anchor="start" xml:space="preserve">Character height 16.8' at 700 mm. ISO 9241-303: 16' floor, 20-22' target.</text>
+<rect x="26.00" y="60.00" width="708.42" height="398.48" fill="#1b1b1b" rx="2"/>
+<rect x="26.00" y="60.00" width="708.42" height="30.99" fill="#262626"/>
+<text x="28.00" y="79.22" font-family="Hack, monospace" font-size="4.000" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">github : bash — Konsole</text>
+<rect x="26.00" y="90.99" width="177.10" height="183.75" fill="#191919" stroke="#3a3a3a" stroke-width="0.25"/>
+<text x="27.41" y="95.42" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">Claude-Monitor-Research : claude</text>
+<clipPath id="pane0_0"><rect x="26.00" y="90.99" width="177.10" height="183.75"/></clipPath>
+<g clip-path="url(#pane0_0)">
+<text x="27.41" y="272.80" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">▸▸ </text>
+<text x="35.89" y="272.80" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">bypass permissions on (shift+tab to cycle)</text>
+<text x="27.41" y="267.27" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="27.41" y="261.74" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">─────────────────────────────────────────────────────────────</text>
+<text x="27.41" y="256.21" font-family="Hack, monospace" font-size="4.693" fill="#dd8452" font-weight="normal" text-anchor="start" xml:space="preserve">✳ </text>
+<text x="33.06" y="256.21" font-family="Hack, monospace" font-size="4.693" fill="#dd8452" font-weight="normal" text-anchor="start" xml:space="preserve">Working… (41s)</text>
+<text x="27.41" y="250.68" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  column of headroom. That overturns the 40in conclusion.</text>
+<text x="27.41" y="245.15" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="245.15" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">Eight panes at the observed size fit a 32in 4K with a spare</text>
+<text x="27.41" y="239.62" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  </text>
+<text x="33.06" y="239.62" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">… +14 lines (ctrl+o to expand)</text>
+<text x="27.41" y="234.09" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="38.71" y="234.09" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">32in 16:9 4K   138  250x66   216x40   yes   none   9</text>
+<text x="27.41" y="228.56" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">    --layout 8x1 2&gt;&amp;1 | tail -20)</text>
+<text x="27.41" y="223.03" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="223.03" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Bash</text>
+<text x="44.36" y="223.03" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(python3 scripts/geometry.py --tier observed --panes 8</text>
+<text x="27.41" y="217.50" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  one the font suggests.</text>
+<text x="27.41" y="211.97" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="211.97" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">The pixel that matters is the one Konsole draws, not the</text>
+<text x="27.41" y="206.44" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="38.71" y="206.44" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">218 +  line_em = 22.0 / (14 * 96 / 72)</text>
+<text x="27.41" y="200.91" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="38.71" y="200.91" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">217 -  line_em = font_hhea</text>
+<text x="27.41" y="195.38" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="195.38" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Edit</text>
+<text x="44.36" y="195.38" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(scripts/geometry.py)</text>
+<text x="27.41" y="189.85" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  measured value.</text>
+<text x="27.41" y="184.32" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  draws 22.0 px against an 18.667 px em — 1.1786. Using the</text>
+<text x="27.41" y="178.79" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="178.79" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">hhea gives 1.1641 em. Measured off the screenshot, Konsole</text>
+<text x="27.41" y="173.26" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="38.71" y="173.26" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">1901 -483</text>
+<text x="27.41" y="167.72" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">    f['hhea'].descent)")</text>
+<text x="27.41" y="162.19" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">    Regular.ttf'); print(f['hhea'].ascent,</text>
+<text x="27.41" y="156.66" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">    f=TTFont('/usr/share/fonts/truetype/hack/Hack-</text>
+<text x="27.41" y="151.13" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="151.13" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Bash</text>
+<text x="44.36" y="151.13" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(python3 -c "from fontTools.ttLib import TTFont;</text>
+<text x="27.41" y="145.60" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  lays out.</text>
+<text x="27.41" y="140.07" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="140.07" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">The font's, which is wrong. Checking what Konsole really</text>
+<text x="27.41" y="134.54" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  different — which one is the model using?</text>
+<text x="27.41" y="129.01" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="33.06" y="129.01" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">the font's line height and what konsole actually draws are</text>
+</g>
+<rect x="203.10" y="90.99" width="177.10" height="183.75" fill="#191919" stroke="#3a3a3a" stroke-width="0.25"/>
+<text x="204.52" y="95.42" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">Sensory-Notebook : claude</text>
+<clipPath id="pane0_1"><rect x="203.10" y="90.99" width="177.10" height="183.75"/></clipPath>
+<g clip-path="url(#pane0_1)">
+<text x="204.52" y="272.80" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">▸▸ </text>
+<text x="212.99" y="272.80" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">bypass permissions on (shift+tab to cycle)</text>
+<text x="204.52" y="267.27" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="204.52" y="261.74" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">─────────────────────────────────────────────────────────────</text>
+<text x="204.52" y="256.21" font-family="Hack, monospace" font-size="4.693" fill="#dd8452" font-weight="normal" text-anchor="start" xml:space="preserve">✳ </text>
+<text x="210.17" y="256.21" font-family="Hack, monospace" font-size="4.693" fill="#dd8452" font-weight="normal" text-anchor="start" xml:space="preserve">Seasoning… (2m 33s)</text>
+<text x="204.52" y="250.68" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  question, and the cross-references.</text>
+<text x="204.52" y="245.15" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="210.17" y="245.15" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">Read the workspace. Writing the recommendation, the open</text>
+<text x="204.52" y="239.62" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  </text>
+<text x="210.17" y="239.62" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">… +116 lines (ctrl+o to expand)</text>
+<text x="204.52" y="234.09" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="215.82" y="234.09" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">of the overall ADHD picture. That is the open question.</text>
+<text x="204.52" y="228.56" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">    ===" &amp;&amp; sed -n '44,66p' context/scope.md)</text>
+<text x="204.52" y="223.03" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="210.17" y="223.03" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Bash</text>
+<text x="221.47" y="223.03" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(sed -n '36,48p' context/story.md &amp;&amp; echo "=== SCOPE</text>
+<text x="204.52" y="217.50" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  </text>
+<text x="210.17" y="217.50" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">… +76 lines (ctrl+o to expand)</text>
+<text x="204.52" y="211.97" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="215.82" y="211.97" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">For each: what the trigger is, how it presents,</text>
+<text x="204.52" y="206.44" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">    's/\$$//' | head -40)</text>
+<text x="204.52" y="200.91" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="210.17" y="200.91" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Bash</text>
+<text x="221.47" y="200.91" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(sed -n '25,50p' context/profile.md | cat -A | sed</text>
+<text x="204.52" y="195.38" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  open question, and the cross-references</text>
+<text x="204.52" y="189.85" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="210.17" y="189.85" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">read the workspace and write up the recommendation, the</text>
+</g>
+<rect x="380.21" y="90.99" width="177.10" height="183.75" fill="#191919" stroke="#3a3a3a" stroke-width="0.25"/>
+<text x="381.62" y="95.42" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">book-blueprint : claude</text>
+<clipPath id="pane0_2"><rect x="380.21" y="90.99" width="177.10" height="183.75"/></clipPath>
+<g clip-path="url(#pane0_2)">
+<text x="381.62" y="272.80" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">▸▸ </text>
+<text x="390.10" y="272.80" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">bypass permissions on (shift+tab to cycle)</text>
+<text x="381.62" y="267.27" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="381.62" y="261.74" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">─────────────────────────────────────────────────────────────</text>
+<text x="381.62" y="256.21" font-family="Hack, monospace" font-size="4.693" fill="#dd8452" font-weight="normal" text-anchor="start" xml:space="preserve">✳ </text>
+<text x="387.27" y="256.21" font-family="Hack, monospace" font-size="4.693" fill="#dd8452" font-weight="normal" text-anchor="start" xml:space="preserve">Working… (6m 38s · thought for 2s)</text>
+<text x="381.62" y="250.68" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  matters more here than it looks.</text>
+<text x="381.62" y="245.15" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  after publication, so the cover and the listing agreeing</text>
+<text x="381.62" y="239.62" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="387.27" y="239.62" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">KDP will not let the title be edited more than 72 hours</text>
+<text x="381.62" y="234.09" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="392.92" y="234.09" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">Title: The My Weird Prompts Companion</text>
+<text x="381.62" y="228.56" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="392.92" y="228.56" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">rough page objects: 741</text>
+<text x="381.62" y="223.03" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">    pathlib.Path('book.pdf').read_bytes())))")</text>
+<text x="381.62" y="217.50" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">    print(len(re.findall(rb'/Type\\s*/Page[^s]',</text>
+<text x="381.62" y="211.97" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="387.27" y="211.97" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Bash</text>
+<text x="398.57" y="211.97" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(cd dist &amp;&amp; python3 -c "import re, pathlib;</text>
+<text x="381.62" y="206.44" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="387.27" y="206.44" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">Compiled in 5.5s. Let me look at what actually came out.</text>
+<text x="381.62" y="200.91" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  </text>
+<text x="387.27" y="200.91" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">… +22 lines (ctrl+o to expand)</text>
+<text x="381.62" y="195.38" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="392.92" y="195.38" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">index.typ:64:16</text>
+<text x="381.62" y="189.85" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="392.92" y="189.85" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">warning: unknown font family: linux libertine</text>
+<text x="381.62" y="184.32" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">    --compile 2&gt;&amp;1 | tail -40)</text>
+<text x="381.62" y="178.79" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="387.27" y="178.79" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Bash</text>
+<text x="398.57" y="178.79" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(time .venv/bin/python scripts/build-manuscript.py</text>
+<text x="381.62" y="173.26" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  check both and fix whichever is wrong</text>
+<text x="381.62" y="167.72" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="387.27" y="167.72" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">the cover and the listing have to agree on the title —</text>
+</g>
+<rect x="557.31" y="90.99" width="177.10" height="183.75" fill="#191919" stroke="#ff5f5f" stroke-width="0.5"/>
+<text x="558.73" y="95.42" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">● Habits-Of-Claude : claude</text>
+<clipPath id="pane0_3"><rect x="557.31" y="90.99" width="177.10" height="183.75"/></clipPath>
+<g clip-path="url(#pane0_3)">
+<text x="558.73" y="272.80" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">▸▸ </text>
+<text x="567.20" y="272.80" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">bypass permissions on (shift+tab to cycle)</text>
+<text x="558.73" y="267.27" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="558.73" y="261.74" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">─────────────────────────────────────────────────────────────</text>
+<text x="558.73" y="256.21" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">❯ waiting for input</text>
+<text x="558.73" y="250.68" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  </text>
+<text x="564.38" y="250.68" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">3. No, and tell Claude what to do differently</text>
+<text x="558.73" y="245.15" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  </text>
+<text x="564.38" y="245.15" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">2. Yes, and don't ask again this session</text>
+<text x="558.73" y="239.62" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  </text>
+<text x="564.38" y="239.62" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">1. Yes</text>
+<text x="558.73" y="234.09" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">Do you want to make this edit to habits/verify.md?</text>
+<text x="558.73" y="228.56" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="570.03" y="228.56" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">Read 84 lines</text>
+<text x="558.73" y="223.03" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="564.38" y="223.03" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Read</text>
+<text x="575.68" y="223.03" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(habits/verify.md)</text>
+<text x="558.73" y="217.50" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  knowing a route actually failed.</text>
+<text x="558.73" y="211.97" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  in before the escalation habit, since escalation depends on</text>
+<text x="558.73" y="206.44" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="564.38" y="206.44" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">Drafted it against the existing structure. It needs to go</text>
+<text x="558.73" y="200.91" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  that stands in for it</text>
+<text x="558.73" y="195.38" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="564.38" y="195.38" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">add a habit about verifying the thing rather than a signal</text>
+</g>
+<rect x="26.00" y="274.74" width="177.10" height="183.75" fill="#191919" stroke="#2ea043" stroke-width="0.25"/>
+<text x="27.41" y="279.16" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">✓ Storrs-MCP : claude</text>
+<clipPath id="pane1_0"><rect x="26.00" y="274.74" width="177.10" height="183.75"/></clipPath>
+<g clip-path="url(#pane1_0)">
+<text x="27.41" y="456.55" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">▸▸ </text>
+<text x="35.89" y="456.55" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">bypass permissions on (shift+tab to cycle)</text>
+<text x="27.41" y="451.02" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="27.41" y="445.49" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">─────────────────────────────────────────────────────────────</text>
+<text x="27.41" y="439.96" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="439.96" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">Done — 26 tests pass and the change is pushed.</text>
+<text x="27.41" y="434.43" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="38.71" y="434.43" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">a1b2c3d..e4f5a6b  main -&gt; main</text>
+<text x="27.41" y="428.90" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="38.71" y="428.90" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">To https://github.com/danielrosehill/Storrs-MCP.git</text>
+<text x="27.41" y="423.37" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="423.37" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Bash</text>
+<text x="44.36" y="423.37" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(git push origin main)</text>
+<text x="27.41" y="417.84" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="417.84" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">All green. Pushing.</text>
+<text x="27.41" y="412.31" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="38.71" y="412.31" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">26 passed in 3.41s</text>
+<text x="27.41" y="406.77" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="38.71" y="406.77" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">.......................... [100%]</text>
+<text x="27.41" y="401.24" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="33.06" y="401.24" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Bash</text>
+<text x="44.36" y="401.24" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(uv run pytest tests/ -q 2&gt;&amp;1 | tail -20)</text>
+<text x="27.41" y="395.71" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="33.06" y="395.71" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">run the tests and push if they pass</text>
+</g>
+<rect x="203.10" y="274.74" width="177.10" height="183.75" fill="#191919" stroke="#3a3a3a" stroke-width="0.25"/>
+<text x="204.52" y="279.16" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">github : bash</text>
+<clipPath id="pane1_1"><rect x="203.10" y="274.74" width="177.10" height="183.75"/></clipPath>
+<g clip-path="url(#pane1_1)">
+<text x="204.52" y="456.55" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">▸▸ </text>
+<text x="212.99" y="456.55" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">bypass permissions on (shift+tab to cycle)</text>
+<text x="204.52" y="451.02" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="204.52" y="445.49" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">─────────────────────────────────────────────────────────────</text>
+<text x="204.52" y="439.96" font-family="Hack, monospace" font-size="4.693" fill="#3ad900" font-weight="normal" text-anchor="start" xml:space="preserve">daniel@daniellaptop:~/repos/github$</text>
+<text x="204.52" y="434.43" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">  prints them</text>
+<text x="204.52" y="428.90" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">… 275 more, numbered 34-308 · n pages to them, lsrepos --all</text>
+<text x="204.52" y="423.37" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="215.82" y="423.37" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">12 Computer-Monitor-Purchase-0812</text>
+<text x="204.52" y="417.84" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="215.82" y="417.84" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">11 Claude-Workspace-Foundational-Plugin</text>
+<text x="204.52" y="412.31" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="215.82" y="412.31" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">10 Claude-Voice-Notifier</text>
+<text x="204.52" y="406.77" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="215.82" y="406.77" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve"> 9 Claude-Tooling-Prior-Art</text>
+<text x="204.52" y="401.24" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="215.82" y="401.24" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve"> 8 Claude-SOPs</text>
+<text x="204.52" y="395.71" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="215.82" y="395.71" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve"> 7 Claude-Research-Space-Plugin</text>
+<text x="204.52" y="390.18" font-family="Hack, monospace" font-size="4.693" fill="#3ad900" font-weight="normal" text-anchor="start" xml:space="preserve">daniel@daniellaptop:~/repos/github$ lsrepos</text>
+</g>
+<rect x="380.21" y="274.74" width="177.10" height="183.75" fill="#191919" stroke="#3a3a3a" stroke-width="0.25"/>
+<text x="381.62" y="279.16" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">residenceserver : bash</text>
+<clipPath id="pane1_2"><rect x="380.21" y="274.74" width="177.10" height="183.75"/></clipPath>
+<g clip-path="url(#pane1_2)">
+<text x="381.62" y="456.55" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">▸▸ </text>
+<text x="390.10" y="456.55" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">bypass permissions on (shift+tab to cycle)</text>
+<text x="381.62" y="451.02" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="381.62" y="445.49" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">─────────────────────────────────────────────────────────────</text>
+<text x="381.62" y="439.96" font-family="Hack, monospace" font-size="4.693" fill="#3ad900" font-weight="normal" text-anchor="start" xml:space="preserve">daniel@residenceserver:~$</text>
+<text x="381.62" y="434.43" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="392.92" y="434.43" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">watchtower          Up 6 days</text>
+<text x="381.62" y="428.90" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="392.92" y="428.90" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">adguardhome         Up 6 days</text>
+<text x="381.62" y="423.37" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="392.92" y="423.37" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">waha                Up 6 days (healthy)</text>
+<text x="381.62" y="417.84" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="392.92" y="417.84" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">mcpjungle-gateway   Up 6 days (healthy)</text>
+<text x="381.62" y="412.31" font-family="Hack, monospace" font-size="4.693" fill="#3ad900" font-weight="normal" text-anchor="start" xml:space="preserve">  '{{.Names}}\t{{.Status}}'</text>
+<text x="381.62" y="406.77" font-family="Hack, monospace" font-size="4.693" fill="#3ad900" font-weight="normal" text-anchor="start" xml:space="preserve">daniel@residenceserver:~$ docker ps --format</text>
+</g>
+<rect x="557.31" y="274.74" width="177.10" height="183.75" fill="#191919" stroke="#3a3a3a" stroke-width="0.25"/>
+<text x="558.73" y="279.16" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">Claude-Fleet-Traffic-Shaper : claude</text>
+<clipPath id="pane1_3"><rect x="557.31" y="274.74" width="177.10" height="183.75"/></clipPath>
+<g clip-path="url(#pane1_3)">
+<text x="558.73" y="456.55" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">▸▸ </text>
+<text x="567.20" y="456.55" font-family="Hack, monospace" font-size="4.693" fill="#ff5f5f" font-weight="normal" text-anchor="start" xml:space="preserve">bypass permissions on (shift+tab to cycle)</text>
+<text x="558.73" y="451.02" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="558.73" y="445.49" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">─────────────────────────────────────────────────────────────</text>
+<text x="558.73" y="439.96" font-family="Hack, monospace" font-size="4.693" fill="#dd8452" font-weight="normal" text-anchor="start" xml:space="preserve">✳ </text>
+<text x="564.38" y="439.96" font-family="Hack, monospace" font-size="4.693" fill="#dd8452" font-weight="normal" text-anchor="start" xml:space="preserve">Working… (1m 12s)</text>
+<text x="558.73" y="434.43" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  documentation sweep.</text>
+<text x="558.73" y="428.90" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  — the foreground one is as likely to stall as a background</text>
+<text x="558.73" y="423.37" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  mid-request, which is uncorrelated with what you care about</text>
+<text x="558.73" y="417.84" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="564.38" y="417.84" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">The session that eats the 529 is whichever happened to be</text>
+<text x="558.73" y="412.31" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  exist.</text>
+<text x="558.73" y="406.77" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  greedy clients. Nothing in the system knows the other five</text>
+<text x="558.73" y="401.24" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="564.38" y="401.24" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">Six sessions on one account behave like six independent</text>
+<text x="558.73" y="395.71" font-family="Hack, monospace" font-size="4.693" fill="#8a8a8a" font-weight="normal" text-anchor="start" xml:space="preserve">  └ </text>
+<text x="570.03" y="395.71" font-family="Hack, monospace" font-size="4.693" fill="#cfcfcf" font-weight="normal" text-anchor="start" xml:space="preserve">Read 240 lines</text>
+<text x="558.73" y="390.18" font-family="Hack, monospace" font-size="4.693" fill="#2ea043" font-weight="normal" text-anchor="start" xml:space="preserve">● </text>
+<text x="564.38" y="390.18" font-family="Hack, monospace" font-size="4.693" fill="#61afef" font-weight="bold" text-anchor="start" xml:space="preserve">Read</text>
+<text x="575.68" y="390.18" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">(docs/contention-model.md)</text>
+<text x="558.73" y="384.65" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">  should eat the 429?</text>
+<text x="558.73" y="379.12" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">❯ </text>
+<text x="564.38" y="379.12" font-family="Hack, monospace" font-size="4.693" fill="#e6e6e6" font-weight="normal" text-anchor="start" xml:space="preserve">does the contention model say anything about which session</text>
+</g>
+<text x="26.00" y="472.48" font-family="DejaVu Sans, sans-serif" font-size="3.600" fill="#111111" font-weight="normal" text-anchor="start" xml:space="preserve">Printed at 100% scale, view from 700 mm.</text>
+<text x="26.00" y="477.98" font-family="DejaVu Sans, sans-serif" font-size="3.600" fill="#444444" font-weight="normal" text-anchor="start" xml:space="preserve">Printed to fit A4 landscape (x0.364), view from 255 mm — scaling by k and viewing at k x distance preserves angular size exactly.</text>
+<text x="734.42" y="477.98" font-family="DejaVu Sans, sans-serif" font-size="3.600" fill="#b00020" font-weight="normal" text-anchor="end" xml:space="preserve">red +N↑ = lines pushed off the top by wrapping</text>
+</svg>

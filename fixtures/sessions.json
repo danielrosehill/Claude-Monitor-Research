@@ -1,0 +1,151 @@
+[
+  {
+    "title": "Claude-Monitor-Research : claude",
+    "state": "working",
+    "lines": [
+      {"kind": "user", "text": "the font's line height and what konsole actually draws are different — which one is the model using?"},
+      {"kind": "assistant", "text": "The font's, which is wrong. Checking what Konsole really lays out."},
+      {"kind": "tool", "tool": "Bash", "text": "python3 -c \"from fontTools.ttLib import TTFont; f=TTFont('/usr/share/fonts/truetype/hack/Hack-Regular.ttf'); print(f['hhea'].ascent, f['hhea'].descent)\""},
+      {"kind": "result", "text": "1901 -483"},
+      {"kind": "assistant", "text": "hhea gives 1.1641 em. Measured off the screenshot, Konsole draws 22.0 px against an 18.667 px em — 1.1786. Using the measured value."},
+      {"kind": "tool", "tool": "Edit", "text": "scripts/geometry.py"},
+      {"kind": "result", "text": "217 -  line_em = font_hhea"},
+      {"kind": "result", "text": "218 +  line_em = 22.0 / (14 * 96 / 72)"},
+      {"kind": "assistant", "text": "The pixel that matters is the one Konsole draws, not the one the font suggests."},
+      {"kind": "tool", "tool": "Bash", "text": "python3 scripts/geometry.py --tier observed --panes 8 --layout 8x1 2>&1 | tail -20"},
+      {"kind": "result", "text": "32in 16:9 4K   138  250x66   216x40   yes   none   9"},
+      {"kind": "truncated", "text": "… +14 lines (ctrl+o to expand)"},
+      {"kind": "assistant", "text": "Eight panes at the observed size fit a 32in 4K with a spare column of headroom. That overturns the 40in conclusion."},
+      {"kind": "status", "text": "Working… (41s)"}
+    ]
+  },
+  {
+    "title": "Sensory-Notebook : claude",
+    "state": "working",
+    "lines": [
+      {"kind": "user", "text": "read the workspace and write up the recommendation, the open question, and the cross-references"},
+      {"kind": "tool", "tool": "Bash", "text": "sed -n '25,50p' context/profile.md | cat -A | sed 's/\\$$//' | head -40"},
+      {"kind": "result", "text": "For each: what the trigger is, how it presents,"},
+      {"kind": "truncated", "text": "… +76 lines (ctrl+o to expand)"},
+      {"kind": "tool", "tool": "Bash", "text": "sed -n '36,48p' context/story.md && echo \"=== SCOPE ===\" && sed -n '44,66p' context/scope.md"},
+      {"kind": "result", "text": "of the overall ADHD picture. That is the open question."},
+      {"kind": "truncated", "text": "… +116 lines (ctrl+o to expand)"},
+      {"kind": "assistant", "text": "Read the workspace. Writing the recommendation, the open question, and the cross-references."},
+      {"kind": "status", "text": "Seasoning… (2m 33s)"}
+    ]
+  },
+  {
+    "title": "book-blueprint : claude",
+    "state": "working",
+    "lines": [
+      {"kind": "user", "text": "the cover and the listing have to agree on the title — check both and fix whichever is wrong"},
+      {"kind": "tool", "tool": "Bash", "text": "time .venv/bin/python scripts/build-manuscript.py --compile 2>&1 | tail -40"},
+      {"kind": "result", "text": "warning: unknown font family: linux libertine"},
+      {"kind": "result", "text": "index.typ:64:16"},
+      {"kind": "truncated", "text": "… +22 lines (ctrl+o to expand)"},
+      {"kind": "assistant", "text": "Compiled in 5.5s. Let me look at what actually came out."},
+      {"kind": "tool", "tool": "Bash", "text": "cd dist && python3 -c \"import re, pathlib; print(len(re.findall(rb'/Type\\\\s*/Page[^s]', pathlib.Path('book.pdf').read_bytes())))\""},
+      {"kind": "result", "text": "rough page objects: 741"},
+      {"kind": "result", "text": "Title: The My Weird Prompts Companion"},
+      {"kind": "assistant", "text": "KDP will not let the title be edited more than 72 hours after publication, so the cover and the listing agreeing matters more here than it looks."},
+      {"kind": "status", "text": "Working… (6m 38s · thought for 2s)"}
+    ]
+  },
+  {
+    "title": "Habits-Of-Claude : claude",
+    "state": "blocked",
+    "lines": [
+      {"kind": "user", "text": "add a habit about verifying the thing rather than a signal that stands in for it"},
+      {"kind": "assistant", "text": "Drafted it against the existing structure. It needs to go in before the escalation habit, since escalation depends on knowing a route actually failed."},
+      {"kind": "tool", "tool": "Read", "text": "habits/verify.md"},
+      {"kind": "result", "text": "Read 84 lines"},
+      {"kind": "question", "text": "Do you want to make this edit to habits/verify.md?"},
+      {"kind": "option", "text": "1. Yes"},
+      {"kind": "option", "text": "2. Yes, and don't ask again this session"},
+      {"kind": "option", "text": "3. No, and tell Claude what to do differently"},
+      {"kind": "alert", "text": "❯ waiting for input"}
+    ]
+  },
+  {
+    "title": "Storrs-MCP : claude",
+    "state": "done",
+    "lines": [
+      {"kind": "user", "text": "run the tests and push if they pass"},
+      {"kind": "tool", "tool": "Bash", "text": "uv run pytest tests/ -q 2>&1 | tail -20"},
+      {"kind": "result", "text": ".......................... [100%]"},
+      {"kind": "result", "text": "26 passed in 3.41s"},
+      {"kind": "assistant", "text": "All green. Pushing."},
+      {"kind": "tool", "tool": "Bash", "text": "git push origin main"},
+      {"kind": "result", "text": "To https://github.com/danielrosehill/Storrs-MCP.git"},
+      {"kind": "result", "text": "a1b2c3d..e4f5a6b  main -> main"},
+      {"kind": "assistant", "text": "Done — 26 tests pass and the change is pushed."}
+    ]
+  },
+  {
+    "title": "github : bash",
+    "state": "shell",
+    "lines": [
+      {"kind": "shell", "text": "daniel@daniellaptop:~/repos/github$ lsrepos"},
+      {"kind": "result", "text": " 7 Claude-Research-Space-Plugin"},
+      {"kind": "result", "text": " 8 Claude-SOPs"},
+      {"kind": "result", "text": " 9 Claude-Tooling-Prior-Art"},
+      {"kind": "result", "text": "10 Claude-Voice-Notifier"},
+      {"kind": "result", "text": "11 Claude-Workspace-Foundational-Plugin"},
+      {"kind": "result", "text": "12 Computer-Monitor-Purchase-0812"},
+      {"kind": "alert", "text": "… 275 more, numbered 34-308 · n pages to them, lsrepos --all prints them"},
+      {"kind": "shell", "text": "daniel@daniellaptop:~/repos/github$ "}
+    ]
+  },
+  {
+    "title": "residenceserver : bash",
+    "state": "shell",
+    "lines": [
+      {"kind": "shell", "text": "daniel@residenceserver:~$ docker ps --format '{{.Names}}\\t{{.Status}}'"},
+      {"kind": "result", "text": "mcpjungle-gateway   Up 6 days (healthy)"},
+      {"kind": "result", "text": "waha                Up 6 days (healthy)"},
+      {"kind": "result", "text": "adguardhome         Up 6 days"},
+      {"kind": "result", "text": "watchtower          Up 6 days"},
+      {"kind": "shell", "text": "daniel@residenceserver:~$ "}
+    ]
+  },
+  {
+    "title": "Claude-Fleet-Traffic-Shaper : claude",
+    "state": "working",
+    "lines": [
+      {"kind": "user", "text": "does the contention model say anything about which session should eat the 429?"},
+      {"kind": "tool", "tool": "Read", "text": "docs/contention-model.md"},
+      {"kind": "result", "text": "Read 240 lines"},
+      {"kind": "assistant", "text": "Six sessions on one account behave like six independent greedy clients. Nothing in the system knows the other five exist."},
+      {"kind": "assistant", "text": "The session that eats the 529 is whichever happened to be mid-request, which is uncorrelated with what you care about — the foreground one is as likely to stall as a background documentation sweep."},
+      {"kind": "status", "text": "Working… (1m 12s)"}
+    ]
+  },
+  {
+    "title": "book-episode-index : claude",
+    "state": "working",
+    "lines": [
+      {"kind": "user", "text": "which fonts does typst actually have available here?"},
+      {"kind": "tool", "tool": "Bash", "text": "fc-list : family 2>/dev/null | tr ',' '\\n' | grep -i -E \"libertinus|libertine|inter|dejavu serif|ebgaramond|charter\" | sort -u | head -20"},
+      {"kind": "result", "text": "Bitstream Charter"},
+      {"kind": "result", "text": "DejaVu Serif"},
+      {"kind": "result", "text": "DejaVu Serif Condensed"},
+      {"kind": "truncated", "text": "… +10 lines (ctrl+o to expand)"},
+      {"kind": "assistant", "text": "No Libertinus, which is why index.typ:64 warns. Charter is the closest thing installed."},
+      {"kind": "status", "text": "Working… (6m 38s · thought for 2s)"}
+    ]
+  },
+  {
+    "title": "Claude-Voice-Notifier : claude",
+    "state": "working",
+    "lines": [
+      {"kind": "user", "text": "resolve the 43 VERIFY markers left in the manuscript"},
+      {"kind": "assistant", "text": "Working through them. Four done, two more that need a decision from you."},
+      {"kind": "result", "text": "✓ Retitle book across manuscript and cover"},
+      {"kind": "result", "text": "✓ Resolve the open-source attribution list"},
+      {"kind": "result", "text": "✓ Review manuscript for consistency"},
+      {"kind": "result", "text": "✓ Add an alphabetical stack index"},
+      {"kind": "truncated", "text": "… +2 completed"},
+      {"kind": "status", "text": "Lollygagging… (2m 20s)"}
+    ]
+  }
+]
