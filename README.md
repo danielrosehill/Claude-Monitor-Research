@@ -18,6 +18,45 @@ Environment assumed throughout: **KDE Plasma on Ubuntu**, Konsole, `Hack 14`.
 
 ---
 
+## If you are here to buy a monitor
+
+**Buy a 32″ 16:9 4K. Run 12 Claude Code instances on it in a 6×2 grid. ~$310.**
+
+Full reasoning, and what the recommendation rests on, in
+[`docs/recommendation.md`](docs/recommendation.md). Rendered at true scale in
+[`wireframes/6x2-32in-4k-RECOMMENDED.svg`](wireframes/6x2-32in-4k-RECOMMENDED.svg).
+
+How many sessions each panel holds at a comfortable working pane (40 × 31 cells,
+the `daily` tier) from 700 mm:
+
+| Monitor | Aspect | Total | **Comfortable** | Street |
+|---|---|---|---|---|
+| 24″ FHD | 16:9 | 4 | **4** | $100 |
+| 27″ QHD | 16:9 | 5 | **5** | $180 |
+| 27″ 4K | 16:9 | 5 | **5** | $350 |
+| **32″ 4K** | **16:9** | 12 | **12** | **$310** |
+| 40″ 21:9 5K2K | 21:9 | 16 | **12** | $620 |
+| 42″ 4K | 16:9 | 16 | **14** | $800 |
+| 48″ 4K | 16:9 | 27 | **21** | $1100 |
+| 49″ 32:9 DQHD | 32:9 | 10 | **7** | $570 |
+| 57″ 32:9 Dual-4K | 32:9 | 24 | **14** | $1600 |
+
+**Comfortable** counts only panes whose centre falls inside the comfortable gaze
+rectangle — 808 × 465 mm at this distance, eyes only, no head turn. It is the
+column that matters: a pane you must turn your head to read is a session you will
+stop checking.
+
+Two things that column exposes. The **40″ 21:9 delivers the same 12 comfortable
+instances as the 32″ at double the price** — its extra width lands outside the
+cone. And the **49″ 32:9, the instinctive answer, is the worst panel on this
+list**: 32:9 spends everything on width, and 1440 px of height holds only one row
+of panes.
+
+Prices are US street, 2026-08-12, indicative of tier not quotes —
+[`docs/monitor-shortlist.md`](docs/monitor-shortlist.md) has models and sourcing.
+
+---
+
 ## Why this is not the same as buying a monitor
 
 The [`Computer-Monitor-Purchase-0812`](https://github.com/danielrosehill/Computer-Monitor-Purchase-0812)
@@ -182,9 +221,13 @@ each candidate actually costs.
 README.md                        this brief and the headline findings
 docs/readability-geometry.md     the model: assumptions, derivation, full tables
 docs/form-factors.md             existing panels scored; spec for a purpose-built one
+docs/recommendation.md           THE ANSWER: what to buy and how to lay it out
+docs/vertical-and-exotic-form-factors.md  horizontal vs vertical vs square, settled
 docs/monitor-shortlist.md        actual buyable models and US prices, by layout
 docs/software-layer.md           the session-grid wrapper: requirements and prior art
 scripts/geometry.py              re-runnable model; --json for machine output
+scripts/ergonomics.py            comfortable-gaze rectangle; which panes need a head turn
+scripts/reference.py             workstation configs scored on panes, comfort and cost
 scripts/shortlist.py             scores real, purchasable monitors against the model
 scripts/wireframe.py             renders true-scale SVG mockups of any candidate grid
 fixtures/sessions.json           simulated session content the wireframes re-flow

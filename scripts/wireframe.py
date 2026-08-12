@@ -128,6 +128,21 @@ CONFIGS = {
     "4x2-49in-32x9": (
         "49in 32:9 DQHD — 8 panes, 4x2", 49.0, 32, 9, 5120, 1440, 4, 2, "working", None),
 
+    # --- the recommended daily driver -------------------------------------
+    # 32in 4K, 6x2. See docs/recommendation.md. Two rows rather than one
+    # because a single row hands every pane 63 rows when a measured session
+    # uses 39 - spending that surplus on a second row doubles the instance
+    # count at 40 columns each, against the 26 in use today.
+    "6x2-32in-4k-RECOMMENDED": (
+        "32in 16:9 4K — 12 panes, 6x2 — THE RECOMMENDATION",
+        31.5, 16, 9, 3840, 2160, 6, 2, "daily", None),
+    "9x2-32in-4k-max": (
+        "32in 16:9 4K — 18 panes, 9x2 — the maximum at today's column width",
+        31.5, 16, 9, 3840, 2160, 9, 2, "observed", None),  # max, judged on cols
+    "7x1-32in-4k-roomy": (
+        "32in 16:9 4K — 7 panes, 7x1 — roomier than today on both axes",
+        31.5, 16, 9, 3840, 2160, 7, 1, "observed", None),
+
     # --- vertical, square and TV-class form factors -----------------------
     # Added 2026-08-12 alongside scripts/reference.py. Pane grids are not
     # chosen, they are the maximum each panel yields at 700 mm - recompute with

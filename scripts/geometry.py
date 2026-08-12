@@ -74,6 +74,18 @@ TIERS = {
                 "guessed to be, because splitting vertically hands every pane the "
                 "full panel height for nothing.",
     },
+    "daily": {
+        "cols": 40, "rows": 31,
+        "note": "THE RECOMMENDATION - see docs/recommendation.md. 40 columns "
+                "because columns are the scarce axis and 26 is a tolerance, not "
+                "a preference. 31 rows because that is what a 32in 4K yields at "
+                "two rows of panes, and it is ample: measured against the "
+                "simulated sessions in fixtures/, the MEDIAN session needs 19 "
+                "rows at 40 columns and only the longest exceeds 31. Unlike the "
+                "observed tier's 39 rows - which is what the laptop happened to "
+                "give, not what a session needs - this row count is derived from "
+                "content demand.",
+    },
     "glanceable": {
         "cols": 60, "rows": 18,
         "note": "Spinner, current action line, and whether it is asking a question. "
