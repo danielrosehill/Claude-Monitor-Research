@@ -157,6 +157,12 @@ a row to spare.
 the promotion. Far cheaper, more portable, standard shape — and it makes the
 software half load-bearing rather than optional.
 
+> **Priced 2026-08-12** — real models and US street prices for all three are in
+> [`docs/monitor-shortlist.md`](docs/monitor-shortlist.md). Short version: the
+> shape candidate A derived is correct, and the class spans **$620 to $2,250** for
+> the same resolution. Candidate B costs **$300**. Candidate C costs **$570–850**
+> and holds the most sessions of anything under $1,000.
+
 **C. Buy width, one row.** *Added after finding 6.* 49″ 32:9 DQHD, all panes in a
 single row, no stacking. Rejected under A and B's 4×2 assumption; the strongest
 option under the layout actually in use, at 15 panes of the observed tier. Its
@@ -165,7 +171,8 @@ row are well off-axis at 700 mm.
 
 Undecided. See [`docs/form-factors.md`](docs/form-factors.md) for the full panel
 scoring and the spec for a purpose-built panel (including, yes, where the Claude
-logo goes).
+logo goes), and [`docs/monitor-shortlist.md`](docs/monitor-shortlist.md) for what
+each candidate actually costs.
 
 ---
 
@@ -175,8 +182,10 @@ logo goes).
 README.md                        this brief and the headline findings
 docs/readability-geometry.md     the model: assumptions, derivation, full tables
 docs/form-factors.md             existing panels scored; spec for a purpose-built one
+docs/monitor-shortlist.md        actual buyable models and US prices, by layout
 docs/software-layer.md           the session-grid wrapper: requirements and prior art
 scripts/geometry.py              re-runnable model; --json for machine output
+scripts/shortlist.py             scores real, purchasable monitors against the model
 scripts/wireframe.py             renders true-scale SVG mockups of any candidate grid
 fixtures/sessions.json           simulated session content the wireframes re-flow
 wireframes/                      generated SVG + PNG, one per candidate configuration
@@ -231,10 +240,10 @@ every panel recommendation rests on them.
 
 Open:
 
+- [ ] **Decide whether 26-column panes are acceptable or merely survivable.** This one judgement picks between a $330, a $620 and an $850 monitor, and no further arithmetic can substitute for it
 - [ ] Pin down the real minimum for a *working* pane — 80×30 is still a guess, and finding 6 showed that a guessed tier can be wrong in shape, not just size
-- [ ] Establish whether 26 columns is tolerable at 700 mm, or only at the 500 mm where it was measured. Candidate C's whole case rests on this
-- [ ] Sit in front of a 32″ 4K and a 40″ 5K2K and verify the derived cell grids
+- [ ] Sit in front of a 49″ DQHD and a 40″ 5K2K at 700 mm and verify the derived cell grids — Micro Center Cambridge MA stocks both, ~45 min away
 - [ ] Decide between candidates A, B and C above
 - [ ] Price the off-axis cost of a 1×N row — the one term the model omits entirely
 - [ ] Measure the external AOC panel's 4-pane layout the same way the 6-pane one was; its model and native resolution are not yet recorded
-- [ ] Cost candidate A at US retail (travel purchase window)
+- [x] ~~Cost candidate A at US retail~~ — done 2026-08-12, [`docs/monitor-shortlist.md`](docs/monitor-shortlist.md)
