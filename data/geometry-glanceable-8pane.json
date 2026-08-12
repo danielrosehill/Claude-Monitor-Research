@@ -1,0 +1,862 @@
+{
+  "font": "Hack",
+  "font_metrics": {
+    "cap_em": 0.729,
+    "adv_em": 0.6021,
+    "line_em": 1.1786
+  },
+  "viewing_distance_mm": 700.0,
+  "tier": "glanceable",
+  "tier_spec": {
+    "cols": 60,
+    "rows": 18,
+    "note": "Spinner, current action line, and whether it is asking a question. Monitoring only - you cannot work in this pane, you can only see that it is alive. ASSUMED - and the observed tier above shows the shape of this guess was wrong on both axes."
+  },
+  "chrome_px": 168,
+  "measured_reference": {
+    "date": "2026-08-12",
+    "display": {
+      "output": "eDP-1",
+      "px": [
+        1920,
+        1080
+      ],
+      "mm": [
+        344,
+        193
+      ],
+      "diagonal_in": 15.6,
+      "ppi": 141.8
+    },
+    "host": "daniellaptop (Lenovo ThinkPad E15 Gen 3)",
+    "session_type": "wayland",
+    "layout": "1x6 (six panes side by side, one row)",
+    "panes_cells": [
+      [
+        26,
+        39
+      ],
+      [
+        26,
+        39
+      ],
+      [
+        26,
+        39
+      ],
+      [
+        27,
+        39
+      ],
+      [
+        25,
+        39
+      ],
+      [
+        26,
+        39
+      ]
+    ],
+    "pane_widths_px": [
+      313,
+      320,
+      320,
+      336,
+      305,
+      326
+    ],
+    "scrollbar_px": 15,
+    "splitter_px": 11,
+    "window_chrome_px": 136,
+    "pane_title_px": 29,
+    "content_px": 858,
+    "bottom_margin_px": 16,
+    "taskbar_px": 40
+  },
+  "panes": 8,
+  "ideal_panels": [
+    {
+      "tier": "glanceable",
+      "layout": "1x8",
+      "panes": 8,
+      "angular_target_arcmin": 16.8,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        61,
+        152
+      ],
+      "physical_mm": [
+        172,
+        871
+      ],
+      "diagonal_in": 35.0,
+      "aspect_ratio": 0.2,
+      "aspect_as_x9": "1.8:9",
+      "resolution_at_ppi": [
+        950,
+        4801
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "2x4",
+      "panes": 8,
+      "angular_target_arcmin": 16.8,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        122,
+        76
+      ],
+      "physical_mm": [
+        345,
+        451
+      ],
+      "diagonal_in": 22.3,
+      "aspect_ratio": 0.76,
+      "aspect_as_x9": "6.9:9",
+      "resolution_at_ppi": [
+        1900,
+        2485
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "4x2",
+      "panes": 8,
+      "angular_target_arcmin": 16.8,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        244,
+        38
+      ],
+      "physical_mm": [
+        689,
+        241
+      ],
+      "diagonal_in": 28.7,
+      "aspect_ratio": 2.86,
+      "aspect_as_x9": "25.8:9",
+      "resolution_at_ppi": [
+        3799,
+        1326
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "8x1",
+      "panes": 8,
+      "angular_target_arcmin": 16.8,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        488,
+        19
+      ],
+      "physical_mm": [
+        1379,
+        136
+      ],
+      "diagonal_in": 54.5,
+      "aspect_ratio": 10.17,
+      "aspect_as_x9": "91.5:9",
+      "resolution_at_ppi": [
+        7599,
+        747
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "1x8",
+      "panes": 8,
+      "angular_target_arcmin": 20.0,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        61,
+        152
+      ],
+      "physical_mm": [
+        205,
+        1031
+      ],
+      "diagonal_in": 41.4,
+      "aspect_ratio": 0.2,
+      "aspect_as_x9": "1.8:9",
+      "resolution_at_ppi": [
+        1131,
+        5684
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "2x4",
+      "panes": 8,
+      "angular_target_arcmin": 20.0,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        122,
+        76
+      ],
+      "physical_mm": [
+        410,
+        531
+      ],
+      "diagonal_in": 26.4,
+      "aspect_ratio": 0.77,
+      "aspect_as_x9": "7.0:9",
+      "resolution_at_ppi": [
+        2262,
+        2926
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "4x2",
+      "panes": 8,
+      "angular_target_arcmin": 20.0,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        244,
+        38
+      ],
+      "physical_mm": [
+        821,
+        281
+      ],
+      "diagonal_in": 34.1,
+      "aspect_ratio": 2.92,
+      "aspect_as_x9": "26.3:9",
+      "resolution_at_ppi": [
+        4523,
+        1547
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "8x1",
+      "panes": 8,
+      "angular_target_arcmin": 20.0,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        488,
+        19
+      ],
+      "physical_mm": [
+        1641,
+        156
+      ],
+      "diagonal_in": 64.9,
+      "aspect_ratio": 10.55,
+      "aspect_as_x9": "94.9:9",
+      "resolution_at_ppi": [
+        9046,
+        857
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "1x8",
+      "panes": 8,
+      "angular_target_arcmin": 22.0,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        61,
+        152
+      ],
+      "physical_mm": [
+        226,
+        1131
+      ],
+      "diagonal_in": 45.4,
+      "aspect_ratio": 0.2,
+      "aspect_as_x9": "1.8:9",
+      "resolution_at_ppi": [
+        1244,
+        6236
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "2x4",
+      "panes": 8,
+      "angular_target_arcmin": 22.0,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        122,
+        76
+      ],
+      "physical_mm": [
+        451,
+        581
+      ],
+      "diagonal_in": 29.0,
+      "aspect_ratio": 0.78,
+      "aspect_as_x9": "7.0:9",
+      "resolution_at_ppi": [
+        2488,
+        3202
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "4x2",
+      "panes": 8,
+      "angular_target_arcmin": 22.0,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        244,
+        38
+      ],
+      "physical_mm": [
+        903,
+        306
+      ],
+      "diagonal_in": 37.5,
+      "aspect_ratio": 2.95,
+      "aspect_as_x9": "26.6:9",
+      "resolution_at_ppi": [
+        4975,
+        1685
+      ],
+      "assumed_ppi": 140.0
+    },
+    {
+      "tier": "glanceable",
+      "layout": "8x1",
+      "panes": 8,
+      "angular_target_arcmin": 22.0,
+      "viewing_distance_mm": 700.0,
+      "required_cells": [
+        488,
+        19
+      ],
+      "physical_mm": [
+        1805,
+        168
+      ],
+      "diagonal_in": 71.4,
+      "aspect_ratio": 10.74,
+      "aspect_as_x9": "96.7:9",
+      "resolution_at_ppi": [
+        9951,
+        926
+      ],
+      "assumed_ppi": 140.0
+    }
+  ],
+  "existing_panels": [
+    {
+      "panel": "laptop eDP-1 (current)",
+      "diagonal_in": 15.6,
+      "aspect": "16:9",
+      "resolution": "1920x1080",
+      "ppi": 141.2,
+      "physical_mm": [
+        345,
+        194
+      ],
+      "font_pt_needed": 19.6,
+      "available_cells": [
+        122,
+        29
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": false,
+      "limiting_axis": "both",
+      "max_panes_this_shape": 2
+    },
+    {
+      "panel": "24in 16:9 FHD",
+      "diagonal_in": 23.8,
+      "aspect": "16:9",
+      "resolution": "1920x1080",
+      "ppi": 92.6,
+      "physical_mm": [
+        527,
+        296
+      ],
+      "font_pt_needed": 12.8,
+      "available_cells": [
+        186,
+        45
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": false,
+      "limiting_axis": "horizontal",
+      "max_panes_this_shape": 6
+    },
+    {
+      "panel": "24in 16:10 WUXGA",
+      "diagonal_in": 24.0,
+      "aspect": "16:10",
+      "resolution": "1920x1200",
+      "ppi": 94.3,
+      "physical_mm": [
+        517,
+        323
+      ],
+      "font_pt_needed": 13.1,
+      "available_cells": [
+        182,
+        50
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": false,
+      "limiting_axis": "horizontal",
+      "max_panes_this_shape": 4
+    },
+    {
+      "panel": "27in 16:9 QHD",
+      "diagonal_in": 27.0,
+      "aspect": "16:9",
+      "resolution": "2560x1440",
+      "ppi": 108.8,
+      "physical_mm": [
+        598,
+        336
+      ],
+      "font_pt_needed": 15.1,
+      "available_cells": [
+        211,
+        53
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": false,
+      "limiting_axis": "horizontal",
+      "max_panes_this_shape": 6
+    },
+    {
+      "panel": "27in 16:9 4K",
+      "diagonal_in": 27.0,
+      "aspect": "16:9",
+      "resolution": "3840x2160",
+      "ppi": 163.2,
+      "physical_mm": [
+        598,
+        336
+      ],
+      "font_pt_needed": 22.6,
+      "available_cells": [
+        211,
+        56
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": false,
+      "limiting_axis": "horizontal",
+      "max_panes_this_shape": 6
+    },
+    {
+      "panel": "32in 16:9 4K",
+      "diagonal_in": 32.0,
+      "aspect": "16:9",
+      "resolution": "3840x2160",
+      "ppi": 137.7,
+      "physical_mm": [
+        708,
+        398
+      ],
+      "font_pt_needed": 19.1,
+      "available_cells": [
+        250,
+        66
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": true,
+      "limiting_axis": "none",
+      "max_panes_this_shape": 12
+    },
+    {
+      "panel": "42in 16:9 4K (OLED TV class)",
+      "diagonal_in": 42.0,
+      "aspect": "16:9",
+      "resolution": "3840x2160",
+      "ppi": 104.9,
+      "physical_mm": [
+        930,
+        523
+      ],
+      "font_pt_needed": 14.5,
+      "available_cells": [
+        329,
+        87
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": true,
+      "limiting_axis": "none",
+      "max_panes_this_shape": 20
+    },
+    {
+      "panel": "48in 16:9 4K (OLED TV class)",
+      "diagonal_in": 48.0,
+      "aspect": "16:9",
+      "resolution": "3840x2160",
+      "ppi": 91.8,
+      "physical_mm": [
+        1063,
+        598
+      ],
+      "font_pt_needed": 12.7,
+      "available_cells": [
+        376,
+        99
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": true,
+      "limiting_axis": "none",
+      "max_panes_this_shape": 30
+    },
+    {
+      "panel": "34in 21:9 UWQHD",
+      "diagonal_in": 34.0,
+      "aspect": "21:9",
+      "resolution": "3440x1440",
+      "ppi": 110.1,
+      "physical_mm": [
+        794,
+        340
+      ],
+      "font_pt_needed": 15.3,
+      "available_cells": [
+        280,
+        53
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": true,
+      "limiting_axis": "none",
+      "max_panes_this_shape": 8
+    },
+    {
+      "panel": "45in 21:9 UWQHD",
+      "diagonal_in": 45.0,
+      "aspect": "21:9",
+      "resolution": "3440x1440",
+      "ppi": 83.2,
+      "physical_mm": [
+        1051,
+        450
+      ],
+      "font_pt_needed": 11.5,
+      "available_cells": [
+        371,
+        70
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": true,
+      "limiting_axis": "none",
+      "max_panes_this_shape": 18
+    },
+    {
+      "panel": "40in 21:9 5K2K",
+      "diagonal_in": 39.7,
+      "aspect": "21:9",
+      "resolution": "5120x2160",
+      "ppi": 140.3,
+      "physical_mm": [
+        927,
+        397
+      ],
+      "font_pt_needed": 19.4,
+      "available_cells": [
+        328,
+        65
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": true,
+      "limiting_axis": "none",
+      "max_panes_this_shape": 15
+    },
+    {
+      "panel": "49in 32:9 DQHD",
+      "diagonal_in": 49.0,
+      "aspect": "32:9",
+      "resolution": "5120x1440",
+      "ppi": 108.5,
+      "physical_mm": [
+        1198,
+        337
+      ],
+      "font_pt_needed": 15.0,
+      "available_cells": [
+        424,
+        53
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": true,
+      "limiting_axis": "none",
+      "max_panes_this_shape": 12
+    },
+    {
+      "panel": "57in 32:9 Dual-4K",
+      "diagonal_in": 57.0,
+      "aspect": "32:9",
+      "resolution": "7680x2160",
+      "ppi": 140.0,
+      "physical_mm": [
+        1394,
+        392
+      ],
+      "font_pt_needed": 19.4,
+      "available_cells": [
+        493,
+        65
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": true,
+      "limiting_axis": "none",
+      "max_panes_this_shape": 24
+    },
+    {
+      "panel": "32in 4K rotated to portrait",
+      "diagonal_in": 32.0,
+      "aspect": "9:16",
+      "resolution": "2160x3840",
+      "ppi": 137.7,
+      "physical_mm": [
+        398,
+        708
+      ],
+      "font_pt_needed": 19.1,
+      "available_cells": [
+        141,
+        122
+      ],
+      "required_cells": [
+        244,
+        38
+      ],
+      "fits": false,
+      "limiting_axis": "horizontal",
+      "max_panes_this_shape": 12
+    }
+  ],
+  "scored_layout": "4x2",
+  "composite_panels": [
+    {
+      "layout": "1x review + 2x4 glanceable",
+      "panes": 9,
+      "angular_target_arcmin": 16.8,
+      "required_cells": [
+        223,
+        76
+      ],
+      "physical_mm": [
+        630,
+        451
+      ],
+      "diagonal_in": 30.5,
+      "aspect_ratio": 1.4,
+      "aspect_as_x9": "12.6:9",
+      "resolution_at_ppi": [
+        3472,
+        2485
+      ]
+    },
+    {
+      "layout": "1x review + 1x8 glanceable",
+      "panes": 9,
+      "angular_target_arcmin": 16.8,
+      "required_cells": [
+        162,
+        152
+      ],
+      "physical_mm": [
+        458,
+        871
+      ],
+      "diagonal_in": 38.7,
+      "aspect_ratio": 0.53,
+      "aspect_as_x9": "4.7:9",
+      "resolution_at_ppi": [
+        2523,
+        4801
+      ]
+    },
+    {
+      "layout": "1x review + 2x3 glanceable",
+      "panes": 7,
+      "angular_target_arcmin": 16.8,
+      "required_cells": [
+        223,
+        57
+      ],
+      "physical_mm": [
+        630,
+        346
+      ],
+      "diagonal_in": 28.3,
+      "aspect_ratio": 1.82,
+      "aspect_as_x9": "16.4:9",
+      "resolution_at_ppi": [
+        3472,
+        1906
+      ]
+    },
+    {
+      "layout": "1x review + 2x4 glanceable",
+      "panes": 9,
+      "angular_target_arcmin": 20.0,
+      "required_cells": [
+        223,
+        76
+      ],
+      "physical_mm": [
+        750,
+        531
+      ],
+      "diagonal_in": 36.2,
+      "aspect_ratio": 1.41,
+      "aspect_as_x9": "12.7:9",
+      "resolution_at_ppi": [
+        4134,
+        2926
+      ]
+    },
+    {
+      "layout": "1x review + 1x8 glanceable",
+      "panes": 9,
+      "angular_target_arcmin": 20.0,
+      "required_cells": [
+        162,
+        152
+      ],
+      "physical_mm": [
+        545,
+        1031
+      ],
+      "diagonal_in": 45.9,
+      "aspect_ratio": 0.53,
+      "aspect_as_x9": "4.8:9",
+      "resolution_at_ppi": [
+        3003,
+        5684
+      ]
+    },
+    {
+      "layout": "1x review + 2x3 glanceable",
+      "panes": 7,
+      "angular_target_arcmin": 20.0,
+      "required_cells": [
+        223,
+        57
+      ],
+      "physical_mm": [
+        750,
+        406
+      ],
+      "diagonal_in": 33.6,
+      "aspect_ratio": 1.85,
+      "aspect_as_x9": "16.6:9",
+      "resolution_at_ppi": [
+        4134,
+        2236
+      ]
+    },
+    {
+      "layout": "1x review + 2x4 glanceable",
+      "panes": 9,
+      "angular_target_arcmin": 22.0,
+      "required_cells": [
+        223,
+        76
+      ],
+      "physical_mm": [
+        825,
+        581
+      ],
+      "diagonal_in": 39.7,
+      "aspect_ratio": 1.42,
+      "aspect_as_x9": "12.8:9",
+      "resolution_at_ppi": [
+        4547,
+        3202
+      ]
+    },
+    {
+      "layout": "1x review + 1x8 glanceable",
+      "panes": 9,
+      "angular_target_arcmin": 22.0,
+      "required_cells": [
+        162,
+        152
+      ],
+      "physical_mm": [
+        599,
+        1131
+      ],
+      "diagonal_in": 50.4,
+      "aspect_ratio": 0.53,
+      "aspect_as_x9": "4.8:9",
+      "resolution_at_ppi": [
+        3303,
+        6236
+      ]
+    },
+    {
+      "layout": "1x review + 2x3 glanceable",
+      "panes": 7,
+      "angular_target_arcmin": 22.0,
+      "required_cells": [
+        223,
+        57
+      ],
+      "physical_mm": [
+        825,
+        443
+      ],
+      "diagonal_in": 36.9,
+      "aspect_ratio": 1.86,
+      "aspect_as_x9": "16.7:9",
+      "resolution_at_ppi": [
+        4547,
+        2443
+      ]
+    }
+  ]
+}

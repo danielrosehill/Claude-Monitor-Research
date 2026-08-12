@@ -1,149 +1,204 @@
 # Claude-Monitor-Research
 
-**The question:** how much display does a multi-pane Claude Code workflow actually
-need, measured in text cells rather than inches?
+Ergonomic and geometric research into a display **dedicated to running a grid of
+concurrent Claude Code sessions** — and the software layer needed to move around
+that grid quickly.
 
-This is a workflow-driven display requirement, not a shopping list. It is
-deliberately separate from the 2026-08-12 monitor purchase repos, which optimised
-for a different variable:
+The target: **at least 8 sessions visible at once**, with no tabbing, no virtual
+desktops and no window switching to see any of them.
 
-| Repo | Optimised for |
+This is a hardware *and* software problem, and the two halves constrain each other:
+
+| Half | Question |
 |---|---|
-| [`Computer-Monitor-Purchase-0812`](https://github.com/danielrosehill/Computer-Monitor-Purchase-0812) | Stand geometry — getting a panel to eye level without drilling |
-| `Budget-Monitor-Purchase-0812` (private) | Price against that stand requirement |
-| **This repo** | **Pixel budget — how many concurrent Claude panes stay legible** |
+| **Hardware** | What panel — size, aspect ratio, pixel density — makes 8 legible terminal panes physically possible? |
+| **Software** | Given that grid, how do you jump between sessions fast enough that 8 is useful rather than overwhelming? |
 
-Those two settled on 23.8″ 1920×1080. That resolution is the same grid the laptop
-already has, so it adds **zero pane capacity** — see [The 1080p trap](#the-1080p-trap)
-below. That mismatch is why this repo exists.
+Environment assumed throughout: **KDE Plasma on Ubuntu**, Konsole, `Hack 14`.
 
 ---
 
-## Baseline: what is being run today
+## Why this is not the same as buying a monitor
 
-![Konsole split four ways on a 1920×1080 laptop panel](evidence/konsole-4-pane-1920x1080-2026-08-12.png)
+The [`Computer-Monitor-Purchase-0812`](https://github.com/danielrosehill/Computer-Monitor-Purchase-0812)
+research optimised for stand geometry and eye-level ergonomics, and landed on
+23.8″ 1920×1080. For *this* use case that panel is the same 1920×1080 grid the
+laptop already has — bigger characters, **zero additional pane capacity**.
 
-`evidence/konsole-4-pane-1920x1080-2026-08-12.png` — captured 2026-08-12.
-
-Four Konsole panes side by side, running concurrently:
-
-| Pane | Session |
-|---|---|
-| 1 | `book-blueprint : claude` — mid-task, Typst/KDP packaging |
-| 2 | `github : bash` — `lsrecent` repo listing |
-| 3 | `github : bash` — `lsrepos` paged listing |
-| 4 | `book-episode-index : claude` — manuscript build, 6m 38s in |
-
-Two live Claude sessions plus two shells, in a single Konsole tab.
-
-### Measured geometry
-
-Hardware and settings, read off the machine rather than assumed:
-
-| Property | Value | Source |
-|---|---|---|
-| Panel | `eDP-1`, 1920×1080, 344 × 193 mm | `xrandr` |
-| Pixel density | **142 PPI** | 1920 ÷ 344 mm |
-| Terminal font | **Hack 14** | `~/.local/share/konsole/My Theme.profile` |
-| Cell size | ≈ **11.2 × 22.0 px** | line pitch measured off the screenshot (14 line gaps over 308 px) |
-| Konsole window | 1913 × 1038 px | screenshot dimensions |
-| Window chrome | ≈ 168 px vertical | title bar + menu + toolbar + tab bar |
-| **Usable text grid** | **≈ 171 × 39 cells** | derived from the above |
-
-### What four panes costs
-
-171 columns ÷ 4 ≈ **42 columns per pane**, and about 40 after each pane's own
-divider and scrollbar. Confirmed visually: pane 3 wraps
-`Claude-Workspace-Foundational-Plugin` mid-word, and the `lsrepos` pager footer
-spills across three lines.
-
-**40 columns is half the 80-column norm.** Claude Code's own output — tool-call
-headers, diff hunks, indented task lists — is laid out expecting considerably more.
-Everything in panes 1 and 4 of the screenshot is wrapping.
+Both conclusions are correct for their own brief. This repo exists because the
+briefs are different, and this one has never been costed.
 
 ---
 
-## The open question: five stacked rows
+## Headline findings
 
-The layout being considered is **five horizontal levels** — panes stacked as rows
-rather than columns, so each one gets full window width.
+All figures derived by [`scripts/geometry.py`](scripts/geometry.py), which is
+re-runnable and takes viewing distance, font, legibility target and layout as
+parameters. Full working in [`docs/readability-geometry.md`](docs/readability-geometry.md).
 
-On the current panel that is not viable, and the arithmetic is short enough to
-settle it here:
+### 1. The current setup is already at the ergonomic floor
+
+ISO 9241-303 sets **16 arc-minutes** as the absolute minimum character height and
+**20–22′** as the range a display must be capable of. Measured on the laptop:
+
+| | |
+|---|---|
+| Panel | 1920×1080, 344 × 193 mm (15.6″), **141 PPI** |
+| Font | Hack 14 → cap height **2.44 mm** |
+| At 500 mm viewing distance | **16.8 arc-minutes** |
+
+That is 0.8′ above the ISO floor and **well below** the 20–22′ target. There is no
+headroom to shrink text in exchange for more panes — the panes have to come from
+more panel.
+
+### 2. Distance is the hidden multiplier
+
+A desk monitor sits further away than a laptop screen. Holding the *same* 16.8′
+legibility while moving from 500 mm to 700 mm requires **1.4× larger text**, which
+consumes most of a resolution upgrade before a single extra pane appears.
+
+### 3. Eight working panes implies a shape the market barely makes
+
+For 8 panes at 80×30 each (the "working" tier), 4×2, at 700 mm:
+
+| Legibility target | Panel implied | Aspect | Resolution |
+|---|---|---|---|
+| 16.8′ *(current tolerance)* | **38.9″** | 22.1:9 (2.45:1) | 5045 × 2058 |
+| 20′ *(ISO target, low)* | 46.2″ | 22.4:9 | 6006 × 2418 |
+| 22′ *(ISO target, high)* | 50.8″ | 22.5:9 | 6607 × 2643 |
+
+**≈2.45:1 with ~2000+ vertical pixels.** That is the **40″ 21:9 "5K2K"** class
+(5120×2160) almost exactly — the requirement independently re-derives a product
+category that exists but is rare.
+
+### 4. Super-ultrawides solve the wrong axis — *if you stack panes*
+
+The instinctive answer — a 49″ 32:9 — is the **only** large panel tested that
+*fails*, and it fails on rows:
 
 ```
-39 usable text rows ÷ 5 panes  =  7.8 rows each
-     less 1 row per pane title  ≈  6-7 visible lines of output
+49in 32:9 DQHD (5120x1440)   424 cols x 53 rows   needs 324 x 62   FAIL: vertical
+40in 21:9 5K2K (5120x2160)   328 cols x 65 rows   needs 324 x 62   PASS
 ```
 
-Six lines is less than a single Claude tool-call block. Horizontal stacking trades
-the column problem for a worse row problem, because **vertical pixels are the
-scarcer resource on 16:9**.
+Same width in pixels. The 21:9 wins because a **4×2 grid** of terminals is
+row-starved, not column-starved, and 32:9 spends its entire budget on the axis
+that was never short. Rotating a 32″ 4K to portrait fails for the mirror-image
+reason: 141 columns cannot hold four pane-columns.
 
-This is the thing the repo needs to resolve: whether the answer is more vertical
-pixels, a taller aspect ratio, or fewer simultaneous panes.
+**This result is conditional on the 4×2 grid, and finding 6 shows 4×2 is not what
+gets used.** In a single row of panes the row requirement stops scaling with pane
+count — it is fixed at whatever one pane needs — and the same 49″ DQHD passes
+comfortably. Read finding 6 before treating this as a buying signal.
+
+### 5. The pagination split the geometry actually points at
+
+Eight panes at *working* legibility needs a 39–51″ panel. Eight panes at
+*glanceable* legibility (60×18 — enough to see the spinner and whether it is
+blocked) fits a **32″ 4K** today.
+
+That asymmetry is the answer to the tabbing question. You only ever *read* one
+session at a time; the other seven only have to answer "are you waiting for me?"
+
+| Composite layout | Panes | Panel implied | Aspect |
+|---|---|---|---|
+| 1 × review + 2×3 glanceable | **7** | **28.3″** | 16.4:9 — **standard 16:9** |
+| 1 × review + 2×4 glanceable | 9 | 30.5″ | 12.6:9 — taller than anything sold |
+| 1 × review + 1×8 glanceable | 9 | 38.7″ | 4.7:9 — portrait, absurd |
+
+**7 panes (1 working + 6 watching) fits a normal 32″ 4K.** Going to 9 pushes the
+aspect ratio to 1.4:1, which no monitor is. The cliff between 7 and 9 is where the
+hardware argument actually lives.
+
+### 6. Measured: the model is right, and the pane tiers were the wrong shape
+
+Findings 1–5 were derived before any of them had been checked against a real
+multi-pane window. On 2026-08-12 a live six-session layout was measured on the
+laptop — grid read from each pty rather than estimated off an image, captured in
+[`evidence/konsole-6-pane-1920x1080-2026-08-12.png`](evidence/konsole-6-pane-1920x1080-2026-08-12.png)
+and [`data/observed-6pane-thinkpad-2026-08-12.json`](data/observed-6pane-thinkpad-2026-08-12.json).
+
+**The model survives.** At this panel and 500 mm it predicts 171 usable columns
+and 40 rows; the measurement accounts for 169.9 and 40. **0.6% error on columns,
+exact on rows.** The chain from arc-minutes to panel specification is validated.
+
+**The pane tiers do not.** A pane in actual daily use is **26 × 39**, against the
+60 × 18 the `glanceable` tier assumed — 43% of the width, 217% of the height. The
+guess was not mis-sized, it was **mis-proportioned**: it imagined a grid of short
+wide panes, and what gets used is a row of tall narrow ones. Nobody chooses a
+short pane, because splitting vertically hands every pane the full panel height
+for free.
+
+Two consequences:
+
+- **Six sessions already fit on the laptop**, at 156 columns and 39 rows total.
+  The premise that 8 concurrent sessions needs new hardware is weaker than it
+  looked — what new hardware buys is *columns per session*, not session count.
+- **Column overhead is worse than modelled.** A Konsole pane costs 15 px of
+  scrollbar + 11 px of splitter = 26 px, ≈2.3 columns rather than the 1 assumed.
+  Across six panes that is **8.1% of the panel width** before a character is drawn.
+
+Re-scored on these terms — 8 panes at 26×39 in one row — the 49″ 32:9 that
+finding 4 rejected now passes, at 15 panes, the best of any shape listed. See
+[Step 4](docs/readability-geometry.md#step-4--re-scoring-the-market-against-the-observed-tier)
+for that table and its two caveats: 26 columns is a tolerance proven at 500 mm and
+not a preference, and a 1×N row has an off-axis viewing cost the model does not
+price.
 
 ---
 
-## Candidate displays, in cells
+## The two candidate answers
 
-Same font (Hack 14), same ≈ 11.2 × 22.0 px cell, same ≈ 168 px of chrome.
-Grid figures are **derived arithmetic, not measured** — only the 1920×1080 row has
-been observed directly.
+**A. Buy the shape that exists.** 40″ 21:9 5K2K, ~140 PPI — matches the laptop's
+density so `Hack 14` carries over unchanged, and clears 8 working panes at 4×2 with
+a row to spare.
 
-| Display | Resolution | PPI | Text grid | 4 columns | 5 rows |
-|---|---|---|---|---|---|
-| **Laptop panel (current)** | 1920×1080 @ 14″ | 142 | 171 × 41 | 42 cols | 8 rows |
-| 23.8″ 1080p | 1920×1080 | 93 | 171 × 41 | 42 cols | 8 rows |
-| 24″ 16:10 | 1920×1200 | 94 | 171 × 46 | 42 cols | 9 rows |
-| 27″ QHD | 2560×1440 | 109 | 228 × 57 | 57 cols | 11 rows |
-| 34″ ultrawide | 3440×1440 | 110 | 307 × 57 | 76 cols | 11 rows |
-| **32″ 4K @ 100%** | 3840×2160 | 138 | 342 × 90 | **85 cols** | **18 rows** |
-| 27″ 4K @ 100% | 3840×2160 | 163 | 342 × 90 | 85 cols | 18 rows |
-| 49″ super-ultrawide | 5120×1440 | 109 | 457 × 57 | 114 cols | 11 rows |
+**B. Accept the split.** 32″ 4K, 1 review pane + 6 glanceable, with software doing
+the promotion. Far cheaper, more portable, standard shape — and it makes the
+software half load-bearing rather than optional.
 
-### The 1080p trap
+**C. Buy width, one row.** *Added after finding 6.* 49″ 32:9 DQHD, all panes in a
+single row, no stacking. Rejected under A and B's 4×2 assumption; the strongest
+option under the layout actually in use, at 15 panes of the observed tier. Its
+weakness is the one thing the model does not price — the outer panes of a 1218 mm
+row are well off-axis at 700 mm.
 
-A 23.8″ 1080p monitor is the *same 1920×1080 grid* as the laptop. It renders every
-character 53% larger physically (93 PPI against 142) but shows **not one extra pane,
-column or line**. For a workflow whose constraint is pane count, buying more inches
-at the same resolution buys nothing.
-
-This directly undercuts the outcome of `Computer-Monitor-Purchase-0812` *for this
-use case* — that purchase was correct for its own brief (eye-level ergonomics on a
-freestanding stand), and this is a different brief.
-
-### Why 32″ 4K stands out
-
-At 32″, 3840×2160 works out to **138 PPI — within 3% of the laptop's 142 PPI**.
-Hack 14 therefore renders at essentially the same physical size it does now: no
-scaling, no squinting, no relearning a font size. What changes is pure area —
-**2.0× the columns and 2.2× the rows**.
-
-That is the configuration where the five-row layout becomes real: 18 lines per pane
-instead of 7, at full width.
-
-Ultrawides win the column race but stay stuck at 1440 vertical pixels, which is the
-axis the five-row question actually depends on.
+Undecided. See [`docs/form-factors.md`](docs/form-factors.md) for the full panel
+scoring and the spec for a purpose-built panel (including, yes, where the Claude
+logo goes).
 
 ---
+
+## Repository map
+
+```
+README.md                        this brief and the headline findings
+docs/readability-geometry.md     the model: assumptions, derivation, full tables
+docs/form-factors.md             existing panels scored; spec for a purpose-built one
+docs/software-layer.md           the session-grid wrapper: requirements and prior art
+scripts/geometry.py              re-runnable model; --json for machine output
+data/*.json                      generated output, checked in so it is diffable
+data/observed-*.json             measured layouts — evidence, not model output
+evidence/                        real working layouts, dated, with the panel used
+```
 
 ## Status
 
-**Seeded 2026-08-12.** Nothing bought, nothing decided. What exists so far is the
-baseline evidence above and the arithmetic that frames the choice.
+**Specced 2026-08-12, model validated the same day.** Nothing bought, nothing
+built.
+
+The geometry model is complete, its inputs are measured rather than assumed, and
+as of finding 6 it has been **checked against one real layout and reproduces it to
+0.6%**. What remains unvalidated is not the arithmetic but the *requirements* fed
+into it: the `working` and `review` pane tiers are still judgement calls, and
+every panel recommendation rests on them.
 
 Open:
 
-- [ ] Verify the derived cell grid on a borrowed or shop-floor QHD/4K panel rather than trusting the arithmetic
-- [ ] Establish the real minimum readable width for a Claude Code pane — is it 80 columns, or does 60 work?
-- [ ] Decide whether the answer is one large panel or the laptop plus a second screen
-- [ ] Test whether five rows is genuinely the wanted layout, or whether a 2×3 grid reads better
-- [ ] Re-check 32″ 4K pricing against the 23.8″ 1080p decision, US retail
-
-## Layout
-
-```
-README.md    this document — question, measurements, arithmetic
-evidence/    screenshots of real working layouts, dated, with the panel they were taken on
-```
+- [ ] Pin down the real minimum for a *working* pane — 80×30 is still a guess, and finding 6 showed that a guessed tier can be wrong in shape, not just size
+- [ ] Establish whether 26 columns is tolerable at 700 mm, or only at the 500 mm where it was measured. Candidate C's whole case rests on this
+- [ ] Sit in front of a 32″ 4K and a 40″ 5K2K and verify the derived cell grids
+- [ ] Decide between candidates A, B and C above
+- [ ] Price the off-axis cost of a 1×N row — the one term the model omits entirely
+- [ ] Measure the external AOC panel's 4-pane layout the same way the 6-pane one was; its model and native resolution are not yet recorded
+- [ ] Cost candidate A at US retail (travel purchase window)

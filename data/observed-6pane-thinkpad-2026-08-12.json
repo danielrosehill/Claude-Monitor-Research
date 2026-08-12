@@ -1,0 +1,111 @@
+{
+  "_comment": "Measured layout, not derived. This file is evidence; everything else in data/ is model output. Captured by reading the live Konsole rather than estimating off an image - see docs/readability-geometry.md, 'Measuring a live layout'.",
+  "captured": "2026-08-12",
+  "evidence_image": "evidence/konsole-6-pane-1920x1080-2026-08-12.png",
+  "method": {
+    "cell_grid": "qdbus6 org.kde.konsole-<pid> /Sessions/<n> org.kde.konsole.Session.processId | ps -o tty= -p <pid> | stty -F /dev/pts/<n> size",
+    "pixel_bounds": "per-column uniformity scan of the fullscreen capture",
+    "screenshot": "spectacle -b -n -f -o <path>  (works under Wayland; xdotool/xwininfo do not - Konsole is a native Wayland client and never appears in the X11 window stack)"
+  },
+  "host": "daniellaptop (Lenovo ThinkPad E15 Gen 3)",
+  "session_type": "wayland",
+  "display": {
+    "output": "eDP-1",
+    "px": [
+      1920,
+      1080
+    ],
+    "mm": [
+      344,
+      193
+    ],
+    "diagonal_in": 15.6,
+    "ppi": 141.8
+  },
+  "font": "Hack 14",
+  "layout": "1x6 (six panes side by side, one row)",
+  "panes": [
+    {
+      "index": 1,
+      "title": "book-blueprint",
+      "cols": 26,
+      "rows": 39,
+      "width_px": 313
+    },
+    {
+      "index": 2,
+      "title": "Sensory-Notebook",
+      "cols": 26,
+      "rows": 39,
+      "width_px": 320
+    },
+    {
+      "index": 3,
+      "title": "github",
+      "cols": 26,
+      "rows": 39,
+      "width_px": 320
+    },
+    {
+      "index": 4,
+      "title": "Claude-Monitor-Research",
+      "cols": 27,
+      "rows": 39,
+      "width_px": 336
+    },
+    {
+      "index": 5,
+      "title": "book-episode-index",
+      "cols": 25,
+      "rows": 39,
+      "width_px": 305
+    },
+    {
+      "index": 6,
+      "title": "github",
+      "cols": 26,
+      "rows": 39,
+      "width_px": 326
+    }
+  ],
+  "totals": {
+    "panes": 6,
+    "content_columns": 156,
+    "rows_per_pane": 39,
+    "per_pane_overhead_px": 26,
+    "total_overhead_px": 156,
+    "overhead_share_of_width": 0.0813
+  },
+  "vertical_budget_px": {
+    "window_chrome": 136,
+    "pane_title": 29,
+    "content": 858,
+    "bottom_margin": 16,
+    "taskbar": 40,
+    "total": 1079,
+    "content_share_of_height": 0.7944
+  },
+  "model_validation": {
+    "_comment": "Does geometry.py, run at this panel and this viewing distance, predict what was actually measured? This is the first check of the model against a real layout.",
+    "viewing_distance_mm": 500,
+    "angular_target_arcmin": 16.8,
+    "cell_px": [
+      11.22,
+      21.96
+    ],
+    "columns": {
+      "model": 171,
+      "measured_equivalent": 169.9,
+      "error_pct": 0.64
+    },
+    "rows": {
+      "model_available": 40,
+      "_units": "The model's row budget counts PANE_CHROME's title row, so 40 = 39 content rows + 1 title strip.",
+      "measured_content_rows": 39,
+      "measured_title_strips": 1,
+      "measured_equivalent": 40,
+      "error_rows": 0
+    },
+    "verdict": "Model reproduces the measured layout: columns within 0.6% (171 predicted vs 169.9 accounted for), rows exact (40 vs 40) once the pane title strip is counted on both sides. This is the first end-to-end check of the geometry model against a real layout, and it passes."
+  }
+}
